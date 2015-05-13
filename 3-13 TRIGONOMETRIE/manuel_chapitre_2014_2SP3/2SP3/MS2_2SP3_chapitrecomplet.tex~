@@ -1,0 +1,11 @@
+\errorcontextlines=10
+\documentclass[nocr]{sesamathbook}
+\input{./commande.tex}
+\input{./patch.tex}
+\begin{document}
+\setcounter{page}{48}
+\themaS
+\setcounter{chapter}{2}
+\include{./2SP3/inc_chapitre_2SP3}
+\AfficheCorriges
+\end{document}

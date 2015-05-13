@@ -1,0 +1,598 @@
+%5 pages
+\serie{Expérience aléatoire}
+\begin{exercice}\label{2SP3_E_E1}
+     On lance cinq fois une pièce de monnaie. La sortie de Pile rapporte 1 
+ point. La sortie de Face ne rapporte rien. On s'intéresse à la somme des
+ points obtenus à l'issue des cinq lancers.
+ \begin{enumerate}
+ \item Décrire l'univers associé à l'expérience aléatoire.
+ \item Préciser le nombre d'éventualités qui le composent.
+ \end{enumerate}
+ \end{exercice}
+ %3
+ \begin{exercice}Même consigne que l'exercice \RefExercice{2SP3_E_E1}.\\
+     On lance deux dés cubiques dont les faces sont numérotées de 1 à 6 et on 
+ soustrait le plus petit résultat obtenu du plus grand. Le résultat est
+ nul si le lancer produit un double.
+ \end{exercice}
+ %4
+ \begin{exercice} Même consigne que l'exercice \RefExercice{2SP3_E_E1}.\\
+ Pour se rendre du point $A$ au point $B$, on choisit au hasard un trajet 
+ parmi tous les trajets possibles en se déplaçant d'un "pas" à droite ou
+ un "pas" vers le haut.
+     \begin{center}    
+     \begin{tikzpicture}[general]
+     \draw [quadrillage] 
+ (0,0) grid (2,2);
+     \clip(-1,-1) rectangle (3,3);
+     \fill [color=A1] (0,0) circle (1.5pt);
+     \draw[color=A1] (0.03,0.06)[above left] node {$A$};
+     \fill [color=A1] (2,2) circle (1.5pt);
+     \draw[color=A1] (1.98,1.95) [above right] node {$B$};
+     \end{tikzpicture}
+     \end{center}
+ \end{exercice}
+ %5
+ \begin{exercice}
+     \`A partir du lancer simultané de deux dés tétraédriques, imaginer cinq 
+ expériences aléatoires conduisant à cinq univers différents.
+ \end{exercice}
+ %6
+ \begin{exercice}
+ On lance deux dés à trois faces équilibrés et on s'intéresse à la somme des 
+ nombres obtenus. On définit les événements suivants :
+     \begin{itemize}
+         \item $E$ : \og le résultat est pair \fg 
+         \item $F$ : \og le résultat est au moins égal à 5 \fg
+         \item $G$ : \og le résultat est au moins égal à 6 \fg
+     \end{itemize}
+ Préciser les événements élémentaires qui composent chacun des événements ci 
+ dessus.
+ \end{exercice}
+ %7
+ \begin{exercice}
+     Une personne pressée répond au hasard à un sondage. Deux questions sont 
+ posées et à chacune, on donne le choix entre:
+ \begin{colitemize}{2}
+ \item favorable
+ \item opposé
+ \item sans opinion
+ \end{colitemize}
+     De combien de façons la personne peut répondre?
+ \end{exercice}
+ 
+\serie {Vocabulaire des événements}
+
+%modifié par benoit
+\begin{exercice}
+On tire une carte d'un jeu de 32~cartes. \\On appelle:
+\begin{itemize}
+\item $C$ l'événement \og la carte tirée est un c\oe ur\fg
+\item $F$ l'événement \og la carte tirée est une figure\fg 
+\end{itemize}
+\vspace{-1.5em}
+\begin{enumerate}
+ \item Décrire par une phrase l'événement $C\cap F$.
+
+ Combien compte-t-il d'issues?
+ 
+ \item Décrire par une phrase l'événement $C\cup F$.
+ 
+ Combien compte-t-il d'issues?
+ \item  Décrire par une phrase l'événement $\overline{C}\cap F$. 
+ 
+ Combien compte-t-il d'issues?
+  \item  Décrire par une phrase l'événement $\overline{C\cup F}$. 
+ 
+ Combien compte-t-il d'issues?
+\end{enumerate}
+\end{exercice}
+
+%modification de Benoit : suppression de l'espace avant le begin enumerate
+\begin{exercice}
+ Deux épidémies sévissent en même temps dans un lycée, la gastro-entérite et un rhume. On choisit un élève au hasard et on nomme:
+ \begin{itemize}
+ \item $G$ l'événement \og l'élève a la gastro-entérite\fg{}
+ \item  $R$ l'événement \og l'élève a un rhume\fg 
+\end{itemize} 
+ Décrire à l'aide de ces deux événements: 
+ \begin{enumerate}
+  \item \og l'élève a la gastro-entérite et le rhume\fg 
+  \item \og l'élève a le rhume mais pas la gastro-entérite\fg 
+  \item \og l'élève a au moins une des deux maladies\fg 
+  \item \og l'élève n'a aucune des deux maladies\fg 
+ \end{enumerate}
+
+\end{exercice}
+
+%1
+\begin{exercice}\label{horloge numérique}
+On regarde à un instant au hasard l'heure affichée par une 
+horloge à affichage numérique, et on note le chiffre des dizaines du
+nombres des
+    minutes.
+    \begin{enumerate}
+    \item Décrire l'univers associé à l'expérience aléatoire.
+    \item Préciser le nombre d'éventualités qui le composent.
+    \end{enumerate}
+\end{exercice}
+
+%8
+\begin{exercice}
+    Dans une classe de 13 filles et 16 garçons, on désigne au hasard une fille et un garçon pour être délégués
+    provisoires.\\
+    Combien y a-t-il de couples possibles?
+\end{exercice}
+
+%Modification de Benoit : rajout du colitemize qui avait disparu
+\begin{exercice} Construire un diagramme de Venn (sur le modèle ci-dessous) pour chacun des événements suivants.
+  \begin{colitemize}{3}
+  	\item $A\cap \overline{B}$
+  	\item $A\cup \overline{B}$  	
+  	\item $\overline{A\cap B}$
+  	\item $\overline{A\cup B}$  	
+  	\item $\overline{A}\cap \overline{B}$
+  	\item $\overline{A}\cup \overline{B}$
+  \end{colitemize}
+  
+ \begin{tikzpicture}[general, yscale=0.4]
+\draw (-4,-1) rectangle (4,4);% E
+\draw[color=A1] (0,0) ++(135:2) circle (2); % A
+\draw[color=F1] (0,0) ++(45:2) circle (2); % B
+\draw (-2,1.5) node {$A$};
+\draw (2,1.5) node {$B$};
+\draw (3,3.5) node {$\Omega$};
+\end{tikzpicture}
+
+\end{exercice}
+
+\serie{Calcul de probabilités }
+\begin{exercice}
+ Soit $A$ et $B$ deux événements tels que:
+ \begin{colitemize}{2}
+ \item $p(A)=0,7$
+ \item $p(B)=0,5$
+ \item $p(A\cap B)=0,3$
+\end{colitemize} 
+En s'aidant d'un diagramme de Venn, calculer:
+\begin{colenumerate}{3}
+\item $p\left(\overline{A}\right)$
+\item $p(A\cup B)$
+\item $p\left(\overline{A}\cap B\right)$
+\end{colenumerate} 
+\end{exercice}
+
+\begin{exercice}
+ Soit $S$ et $T$ deux événements tels que:
+ \begin{colitemize}{2}
+ \item $p(S)=0,5$
+ \item $p(T)=0,6$
+ \item $p(S\cup T)=0,9$
+ \end{colitemize}
+ Calculer les probabilités suivantes:
+ \begin{colenumerate}{3}
+ \item $p(S\cap T)$
+ \item $p\left(\overline{S\cup T}\right)$
+ \item $p\left(\overline{S\cap T}\right)$.
+ \end{colenumerate}
+\end{exercice}
+
+\begin{exercice}
+ Robin des Bois atteint la cible avec une probabilité de 0,7. Quelle est la probabilité qu'il rate sa cible?
+\end{exercice}
+
+\begin{exercice}
+ $A$ et $B$ sont deux événements incompatibles.
+ \begin{colitemize}{2}
+ \item $p(A)=0,4$
+ \item $p(B)=0,22$
+ \end{colitemize} 
+ Déterminer la probabilité des événements suivants: 
+ \begin{colenumerate}{3}
+  \item $\overline{A}$
+  \item $\overline{B}$
+   \item $A\cup B$
+   \end{colenumerate}
+\end{exercice}
+
+\begin{exercice}
+ $A$ et $B$ sont deux événements tels que:
+ \begin{colitemize}{2}
+ \item $p(A)=0,8$ \item $p(B)=0,53$
+ \end{colitemize}
+ \vspace{-1.5em}
+  \begin{enumerate}
+  \item $A$ et $B$ sont-ils incompatibles?
+  \item Sachant que $p(A\cup B)=0,95$, calculer:
+  \begin{colenumerate}{2} \item $p(A\cap B)$ \item $p\left( A \cap \overline{B}\right)$ \end{colenumerate}
+  \vspace{-1.5em}
+ \end{enumerate}
+\end{exercice}
+
+\begin{exercice}
+ On considère 2 événements $V$ et $F$ tels que:
+ \begin{colitemize}{2}
+ \item $p(V)=0,4$ \item $p(F)=0,3$ \item $p(V\cup F)=0,8$ 
+ \end{colitemize}
+ Aïssatou prétend que ce n'est pas possible. \\Confirmer ou infirmer sa déclaration. 
+\end{exercice}
+
+%\begin{exercice}
+% On considère 2 événements $V$ et $F$ tels que:
+% \begin{colitemize}{2}
+% \item $p(V)=0,6$;
+% \item $p(F)=0,4$;
+% \item $p(V\cup F)=0,8$. 
+% \end{colitemize} 
+%Aminata prétend que ce n'est pas possible.\\ Confirmer ou infirmer sa déclaration. 
+%\end{exercice}
+
+\begin{exercice}
+ On considère 2 événements $V$ et $F$ tels que:
+ \begin{colitemize}{2}
+ \item $p(V)=0,6$ \item $p(F)=0,4$ \item $p(V\cap F)=0,5$ 
+ \end{colitemize} 
+Arinucea prétend que ce n'est pas possible.\\ Confirmer ou infirmer sa déclaration. 
+\end{exercice}
+
+\begin{exercice}
+ On considère 2 événements $V$ et $F$ tels que:
+ \begin{colitemize}{2} \item $p(V)=0,6$ \item $p(F)=0,4$ \item $p(V\cap F)=0,4$ \end{colitemize}
+Ataroa prétend que ce n'est pas possible.\\ Confirmer ou infirmer sa déclaration. 
+\end{exercice}
+
+% \begin{exercice}
+%  On lance un dé pipé tel que 
+%  
+%  $p(1)=2p(2)=3p(3)=4p(4)=5p(5)=6p(6)$
+%  
+%  Calculer $p(1)$.
+% \end{exercice}
+
+\begin{exercice}
+ On considère deux événements $V$ et $F$ tels que $p(V)=0,6$ et $p(V\cup F)=0,7$. Ahuarii prétend que ce n'est pas possible. Confirmer ou infirmer sa déclaration. 
+\end{exercice}
+
+
+\serie{\'Equiprobabilité}
+
+\begin{exercice*}\ExerciceRefMethode{2SP3_M_équiprobabilité}\\\label{2SP3_E_équiprobabilité}
+On lance 3 fois une pièce bien équilibrée.
+\begin{enumerate}
+\item Représenter la situation par un arbre.
+\item Quelle est la probabilité: 
+\begin{enumerate}
+\item d'avoir 3 faces?
+\item que le 2\ieme\ jet soit face?
+\item que le 3\ieme\ jet soit différent du 1\ier? 
+\end{enumerate}
+\end{enumerate}
+\begin{corrige}
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item \begin{colenumerate}{2}
+\item $1/8$
+\item $1/2$
+\item $1/2$
+\end{colenumerate}
+\end{enumerate}
+\end{corrige}
+\end{exercice*}
+
+\begin{exercice}
+Deux dés tétraédriques ont des faces numérotées de 1 à 4. On les lance et on regarde la somme obtenue.
+\begin{enumerate}
+\item Quels sont les résultats possibles?
+\item Est-ce une situation d'équiprobabilité?
+\item Déterminer la probabilité de chaque résultat.
+\end{enumerate}
+\end{exercice}
+
+\begin{exercice}
+      On lance un dé bien équilibré à six faces dont trois sont bleues, deux sont 
+ blanches et une est rouge.
+     \begin{enumerate}
+         \item Les trois couleurs sont-elles équiprobables?
+         \item Déterminer la probabilité d'apparition de chaque couleur.
+     \end{enumerate}
+ \end{exercice}
+ \begin{exercice}[Dé à 4 faces]
+     On lance deux dés à quatre faces et on regarde la somme obtenue.
+     \begin{enumerate}
+         \item Donner l'ensemble des résultats possibles.
+         \item Donner une loi de probabilités de cette expérience 
+ aléatoire (justifier).
+         \item Quelle est la probabilité d'obtenir un nombre pair?
+         \item Quelle est la probabilité d'obtenir un nombre multiple 
+ de trois?
+     \end{enumerate}
+ \end{exercice}
+
+\begin{exercice}[Menus]
+Au restaurant scolaire, les élèves ont le choix 
+\begin{itemize}
+\item entre 2 entrées: Artichaut ou Betterave;
+\item entre 3 plats: Cheval, Daube ou Escalope;
+\item entre 2 desserts: Fromage ou Gâteau.
+\end{itemize}
+Un menu se compose:
+\begin{colitemize}{3}
+\item d'une entrée; \item d'un plat;  \item d'un dessert.
+\end{colitemize}
+\vspace{-1.5em}
+\begin{enumerate}
+\item En utilisant un arbre, représenter tous les menus.
+\item Combien de menus différents sont possibles?
+\item On choisit un menu au hasard. \\ Quelle est la probabilité:
+\begin{enumerate}
+\item qu'il comporte une escalope?
+\item qu'il comporte de l'artichaut et du fromage?
+\item qu'il ne comporte pas de cheval?
+\end{enumerate}
+\end{enumerate}
+\end{exercice}
+
+%%%%%%%%%%%%%29
+\begin{exercice}
+Un groupe de 4 amis, \'Emile, Flore, Gaston et Hélène sont dans un bateau. Ils tirent au sort celui qui va ramer et, parmi les noms restants, celui qui va écoper.
+\begin{enumerate}
+\item Représenter cette situation par un arbre.
+\item Déterminer les probabilités suivantes.
+\begin{enumerate}
+\item C'est un garçon qui rame.
+\item Hélène écope.
+\item Les deux qui travaillent sont de même sexe.
+\end{enumerate}
+\end{enumerate}  
+\end{exercice}
+
+%%%%%%%%%%%%%%30
+
+
+\begin{exercice}[Tirage successif avec remise]
+On tire au hasard une carte d'un jeu de 32 cartes, on la note, puis on la remet dans le jeu avant d'en tirer une seconde.
+	\begin{enumerate}
+		\item Est-ce une situation d'équiprobabilité?
+		\item Combien y a-t-il d'issues?
+		\item Calculer la probabilité de:
+		\begin{enumerate}
+			\item tirer 2 c\oe urs;
+			\item  ne pas tirer de c\oe ur;
+			\item tirer exactement 1 c\oe ur;
+			\item tirer deux fois la même carte;
+			\item tirer deux cartes différentes;
+			\item tirer le roi de c\oe ur.
+		\end{enumerate}	
+	\end{enumerate}
+\end{exercice}
+
+\begin{exercice}[Tirage successif sans remise]
+On tire au hasard deux cartes d'un jeu de 32 cartes, l'une après l'autre.
+	\begin{enumerate}
+		\item Est-ce une situation d'équiprobabilité?
+		\item Combien y a-t-il d'issues?
+		
+		\item Calculer la probabilité de tirer
+		\begin{enumerate}
+		\item deux c\oe urs;
+			\item  exactement 1 c\oe ur;
+			\item  deux fois la même carte;
+			\item  deux cartes différentes;
+			\item  le roi de c\oe ur.
+		\end{enumerate}	
+		\item  Calculer la probabilité de ne pas tirer de c\oe ur.
+	\end{enumerate}
+\end{exercice}
+
+\begin{exercice}
+Trois CD notés $a$, $b$ et $c$ ont respectivement des boîtes nommées $A$, $B$ et $C$.
+On range les 3 CD au hasard dans les boîtes sans voir leur étiquette.
+\begin{enumerate}
+\item Combien de rangements sont possibles?
+\item Quelle est la probabilité 
+\begin{enumerate}
+\item que les 3 CD soient bien rangés?
+\item qu'exactement 1 CD soit bien rangé?
+\item qu'exactement 2 CD soient bien rangés?
+\end{enumerate}
+\item En déduire la probabilité qu'aucun CD ne soit bien rangé.
+\end{enumerate}
+\end{exercice}
+
+%\begin{exercice}
+%On lance deux dés tétraédriques dont les faces sont numérotées de 1 à 4 et on regarde la somme obtenue.
+%\begin{enumerate}
+%\item Quels sont les résultats possibles?
+%\item Déterminer la probabilité de chaque résultat.
+%\item Ces résultats sont-ils équiprobables?
+%\end{enumerate}
+%\end{exercice}
+
+
+
+
+
+\serie{Sans équiprobabilité}
+\begin{exercice} Un univers associé à une expérience aléatoire est constitué de trois issues. La loi de probabilité vérifie $p(A)=t^2$, $p(B)=t$ et $p(C)=\dfrac{\TopStrut 1}{\BotStrut 4}$. Déterminer $t$.
+\end{exercice}
+
+\begin{exercice}[Loi de probabilité]
+ Pour chacun des cas suivants, déterminer la valeur de $t$ qui permet de définir 
+ une loi de probabilités.
+     \begin{enumerate}
+         \item \begin{center}
+                 % use packages: array
+                     \begin{tableau}[C]{\linewidth}{3}{m{1.7cm}}
+                         \hline
+                         Issues & P & F  \\ 
+                         \hline
+                         Probabilités & 0,3 & $t$ \\
+                         \hline
+                     \end{tableau}
+                 \end{center}
+  
+ 
+         \item \begin{center}
+                 % use packages: array
+                      \begin{tableau}[C]{\linewidth}{4} {m{1.7cm}}       
+                         \hline
+                         Issues & Vert & Orange & Rouge   \\ 
+                         \hline
+                         Probabilités & 0,5 & $t$ & 0,3  \\
+                         \hline
+                     \end{tableau}
+                 \end{center}
+         
+  
+         \item \begin{center}
+                 % use packages: array
+                     \begin{tableau}[C]{\linewidth}{5}{m{1.7cm}}   
+                         \hline
+                         Issues & 1 & 2 & 3 & 4  \\ 
+                         \hline
+                         Probabilités & 0,25 & $t$ & 0,2 & 0,4  \\
+                         \hline
+                     \end{tableau}
+                 \end{center}
+ 
+         \item \begin{center}
+                 % use packages: array
+                     \begin{tableau}[C]{\linewidth}{7}{m{1.7cm}}   
+                         \hline
+                         issues & 1 & 2 & 3 & 4 &5 &6 \\ 
+                         \hline
+                         probabilités & $t$ & $2t$ & $3t$ & $4t$ &$5t$ &$6t$ \\
+                         \hline
+                     \end{tableau}
+                 \end{center}
+ 
+     \end{enumerate}
+ \end{exercice}
+\begin{exercice}[Au tennis]
+    Un joueur de tennis de niveau international a une probabilité 0,58 de 
+réussir son premier service et une probabilité de 0,06 de faire une double
+    faute.\\
+    Quelle est la probabilité qu'il réussisse seulement son deuxième service?
+\end{exercice}
+
+\begin{exercice}
+Une entreprise fabrique des ordinateurs portables. Ils peuvent présenter deux défauts:
+\begin{colitemize}{2}
+\item un défaut de clavier;
+\item un défaut d'écran.
+\end{colitemize}
+ Sur un grand nombre d'ordinateurs, une étude statistique montre que:
+\begin{itemize}
+\item \upc{2} présentent un défaut d'écran;
+\item \upc{2,4} présentent un défaut de clavier;
+\item \upc{1,5} présentent les deux défauts.
+\end{itemize}
+\vspace{-0.75em}
+\begin{enumerate}
+\item On choisit au hasard un ordinateur et on considère les événements suivants.
+\begin {itemize}
+\item $E$: \og L'ordinateur présente un défaut d'écran \fg{};
+\item $C$: \og L'ordinateur présente un défaut de clavier \fg{}.
+\end{itemize} Détermine $p(E)$, $p(C)$ et $p(E \cap C)$.
+\item On considère les événements suivants.
+\begin{itemize}
+\item \og L'ordinateur présente au moins un défaut \fg{};
+\item \og L'ordinateur ne présente que le défaut de d'écran \fg{}.
+\end{itemize}
+\vspace{-1.5em}
+\begin{enumerate}
+\item Traduire ces 2  événements à l'aide de $E$ et $C$.
+\item Calcule leur probabilité.
+\end{enumerate}
+\end{enumerate}
+\end{exercice}
+
+
+
+\begin{exercice*}\ExerciceRefMethode{2SP3_M_équiprobabilité}\label{2SP3_E_équiprobabilité_2}\\
+On lance un dé pipé. \\Le tableau suivant regroupe les probabilités.
+\begin{tableau}[lc]{\linewidth}{7}\hline
+$F$&1&2&3&4&5&6\\\hline
+$p(F)$&0,1&0,1&0,2&0,2&0,3&?\\\hline
+\end{tableau}
+\begin{enumerate}
+\item Calculer $p(6)$.
+\item Calculer la probabilités des événements suivants.
+\begin{enumerate}
+\item \og La face obtenue est paire \fg{};
+\item \og la face obtenue est supérieur ou égale à 5 \fg{}. 
+\end{enumerate}
+\vspace{-1.5em}
+\end{enumerate}
+\begin{corrige}
+\begin{enumerate}
+\item 0,1
+\item \begin{colenumerate}{2} \item 0,4 \item 0,4 \end{colenumerate}
+\end{enumerate}
+\end{corrige}
+\end{exercice*}
+
+\begin{exercice}[S'arrêter]
+Voici le cycle d'allumage d'un feu tricolore:
+\begin{itemize}
+\item \us{45} pour le feu vert;
+\item \us{5} pour le feu orange;
+\item \us{20} pour le feu rouge.
+\end{itemize}
+En admettant qu'un automobiliste arrive par hasard devant un feu tricolore fonctionnel, déterminer la loi de probabilité associée à cette expérience.
+\end{exercice}
+
+\begin{exercice}[Prendre rendez-vous!]
+Le standard d'un cabinet médical dispose de deux lignes de téléphone. On considère les événements:
+\begin{itemize}
+\item$O_1$: \og La 1\ier\ ligne est occupée \fg.
+\item $O_2$: \og La 2\ieme\ ligne est occupée \fg. 
+\end{itemize}
+Une étude statistique montre que:
+\begin{itemize}
+\item $p(O_1)=0,4$
+\item $p(O_2)=0,3$
+\item $p(O_1 \cap O_2)=0,2$
+\end{itemize}
+Calculer la probabilité des événements suivants.
+\begin{enumerate}
+\item \og La ligne 1 est libre \fg.
+\item \og Au moins une des lignes est occupée \fg.
+\item \og Au moins une des lignes est libre \fg. 
+\end{enumerate}
+\end{exercice}
+
+\begin{exercice}
+    Un magazine de jeux vidéos souhaite étudier les ventes des deux consoles 
+de next-gen:
+\begin{itemize}
+\item celle de Megahard : la Z-boite 2;
+\item celle de Silency: la Gare de jeux.
+\end{itemize}
+Pour cela elle étudie les ventes sur une journée dans un magasin de 
+centre-ville. Elle constate que sur les 127 ventes de consoles next-gen de la journée, 53 
+personnes ont acheté la Z-boite 2.
+Pedro entre dans le magasin pour acheter une des deux consoles.
+\begin{enumerate}
+\item Quelle est la probabilité qu'il achète la Gare de jeux?
+\item Bill  pense que Pedro à \upc{50} de chances d'acheter chacune des deux consoles.
+    Bill a-t-il raison? Pourquoi?
+\end{enumerate} 
+\end{exercice}
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ %23
+ 
+ 
+
+
+
+
+

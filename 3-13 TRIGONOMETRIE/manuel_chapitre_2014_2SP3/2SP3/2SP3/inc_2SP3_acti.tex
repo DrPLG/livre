@@ -1,0 +1,149 @@
+\begin{activite}[\'Evénements]
+Un sac contient 12 jetons numérotés de 1 à 12. On tire un jeton au hasard. \\ On considère les événements suivants:
+\begin{itemize}
+\item $A$: \og Le numéro du jeton tiré est pair\fg.
+\item $B$: \og Le numéro du jeton tiré est un multiple de 3\fg{}.
+\end{itemize}
+\vspace{-1.5em}
+\begin{enumerate}
+\item Quels sont les événements élémentaires qui composent $A$ et $B$?\\Recopier et compléter: $A=\{ \cdots \}$ et $B=\{ \cdots \}$.
+\item Décrire de même les événements: 
+	\begin{colitemize}{4}
+	\item $A\cap B$ \item $A\cup B$ \item $\overline{A}$ \item $\overline{A\cup B}$ 
+	\item $\overline{A\cap B}$ \item $\overline{A}\cap B$ \item $\overline{A}\cap \overline{B}$ \item $\overline{A}\cup \overline{B}$
+	\end{colitemize}
+\item Certains de ces événements sont-ils identiques? 
+\item Décrire les événements suivants par une phrase:
+	\begin{colitemize}{3}
+	\item $A\cap B$ \item $A\cup B$ \item $\overline{A}$ \item $\overline{A\cup B}$
+	\item $\overline{A\cap B}$ \item $\overline{A}\cap B$
+	\end{colitemize}
+\end{enumerate}
+\end{activite}
+
+\begin{activite}[Arbre des possibles]
+Un paquet contient quatre bonbons:
+\begin{colitemize}{3} \item deux à la myrtille; \item un à la framboise; \item un au citron.\end{colitemize}Sandrine prend au hasard 2 bonbons l'un après l'autre.
+\begin{enumerate}
+\item Antoine a dessiné l'arbre des possibles ci-dessous. Quelles remarques peut-on faire?
+
+\begin{center}
+\psset{unit=1cm}
+\pstree[linecolor=A1,treemode=R]{\TR{}}
+{
+	\pstree{\TR{$M$}}
+	  { 
+		  \TR{$M$}
+		  \TR{$F$}
+		  \TR{$C$}	   
+	  }
+	\pstree{\TR{$F$}}
+	  {
+		  \TR{$M$}
+		  \TR{$C$} 
+	  }	
+	\pstree{\TR{$C$}}
+	  {
+		  \TR{$M$}
+		  \TR{$F$} 
+	  }	
+}
+\end{center} 
+\item Dresser un autre arbre des possibles.
+\item Combien cette expérience aléatoire a-t-elle d'issues?
+\item Quelle est la probabilité:  
+\begin{enumerate}
+\item que Sandrine mange deux bonbons à la myrtille?
+\item que Sandrine mange au moins un bonbon à la myrtille?
+\item que Sandrine ne mange pas de bonbons à la myrtille?
+\end{enumerate}
+\end{enumerate}
+
+\end{activite}
+
+\begin{activite}[Tableau]
+Au self d'un lycée, les \nombre{1230} élèves demi-pensionnaires avaient le choix entre du B\oe uf et du Colin d'une part, accompagné  soit de Frites, soit de Haricots verts, soit de Navets. \\Le cuisinier, qui tient ses statistiques à jour, a remarqué que:
+\begin{itemize}
+\item 840 élèves ont mangé des frites dont 70\:\% avec du b\oe uf;
+\item 108 élèves ont préféré les haricots verts avec du colin, et autant avec du b\oe uf;
+\item au total, 464 parts de colin ont été servies.
+\end{itemize}
+\vspace{-1.5em}
+\begin{enumerate}
+\item Proposer un tableau regroupant l'ensemble des informations ci-dessous.
+%	\begin{center}
+%       \begin{tableau}[lc]{\linewidth}{5}\hline
+%           & Frites & Haricots verts & Navets  & Total \\ \hline
+%           B\oe uf &  &  &  &  \\ \hline
+%           Colin &  &  &  &  \\ \hline
+%           Total &  &  &  & \nombre{1230}\\ \hline
+%       \end{tableau}
+%    \end{center}
+\item On choisit un élève au hasard. Quelle est la probabilité qu'il ait mangé:
+	\begin{colenumerate}{3}
+	\item  du navet?
+	\item   du colin avec des frites?
+	\item  du colin ou des frites?
+	\end{colenumerate}
+\item \begin{enumerate}
+	\item On choisit un élève qui mange du colin.  Quelle est la probabilité qu'il mange des frites?
+	\item On choisit un élève qui mange des frites. Quelle est la probabilité qu'il mange du colin?
+	\end{enumerate}
+\end{enumerate}
+\end{activite}
+
+\begin{activite}[Arbres pondérés]
+Un prince charmant se doit de partir à l'aventure et d'affronter des périls. Dans 42\:\% des cas, il affronte un Dragon, dans 30\:\% ce sont des Trolls et dans les autres cas, c'est le Chevalier noir. Dans tous les cas, il réussit sa Quête avec une probabilité de 0,8. Tuer un dragon lui rapporte \nombre{1000} pièces d'or, un troll 500 pièces d'or et un chevalier noir 300.
+\begin{enumerate}
+\item \begin{enumerate} \item Recopier et compléter l'arbre pondéré:
+\begin{center}
+\psset{unit=0.2cm}
+\pstree[linecolor=A1,treemode=R]{\TR{}}
+{
+	\pstree{\TR{$D$}\taput{0,42}}
+	  { 
+		  \TR{$Q$}
+		  \TR{$\overline{Q}$}	   
+	  }
+	\pstree{\TR{$T$}}
+	  {
+		  \TR{$Q$}
+		  \TR{$\overline{Q}$}
+	  }	
+	\pstree{\TR{$C$}}
+	  {
+		  \TR{$Q$}
+		  \TR{$\overline{Q}$}
+	  }	
+}
+\end{center}
+\item Décrire $\overline{Q}$ à l'aide d'une phrase.
+\end{enumerate}
+\item Un prince part à l'aventure. Quelle est la probabilité 
+	\begin{enumerate}
+	\item qu'il gagne \nombre{1000} pièces d'or?
+	\item qu'il gagne des pièces d'or?
+	\item qu'il revienne bredouille (pour autant qu'il revienne)?
+	\end{enumerate} 
+\item Recopier et compléter le tableau suivant:
+\begin{center}
+\begin{tableau}[C]{\linewidth}{5}{m{3cm}}
+\hline 
+Gains (en pièces d'or) & \nombre{1000} & 500 & 300 & 0 \\ 
+\hline 
+Probabilité &  &  &  &  \\ 
+\hline 
+\end{tableau} 
+\end{center}
+
+\item Combien un prince gagne-t-il de pièces d'or en moyenne pour une quête?
+
+
+\end{enumerate}
+
+\end{activite}
+
+
+
+
+

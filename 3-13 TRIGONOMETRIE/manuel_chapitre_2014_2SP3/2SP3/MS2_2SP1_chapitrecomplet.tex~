@@ -1,0 +1,8 @@
+\errorcontextlines=10
+\documentclass{sesamathbook}
+\input{./commande.tex}
+\begin{document}
+\themaS
+\include{./2SP1/inc_chapitre_2SP1}
+\AfficheCorriges
+\end{document}
